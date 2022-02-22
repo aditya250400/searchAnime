@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eaeaea;
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/**------------------ Header --------------------------**/ 
+
+.header {
+  height: 65px;
+  background-color: #2e51a2;
+  padding: 15px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
+.footer{
+  height: 70px;
+  background-color: #2e51a2;
+  left: 0;
+  width: 100%;
+
+}
+.footer p {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 15px;
+}
+.jadwall {
+  background-color: #eaeaea;
+  padding-top: 2px;
+}
+.p {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.airing {
+  background-color: #dde1ec;
+  padding: 5px;
+
+}
+.side-right-bar a {
+  text-decoration: none;
+}
+.header h1 {
+  font-weight: none;
+  font-size: 18px;
+  float: left;
+  color: #fff;
+  padding-right: 30px;
+}
+.header li {
+  float: left;
+  padding-right: 25px;
+  color: #fff;
+}
+li {
+  list-style: none;
+}
+.header a {
+  text-decoration: none;
+  color: #fff;
+}
+.header ul li ul {
+  display: none;
+}
+.header ul li:hover ul {
+  display: block;
+  background-color: #4082b5;
+  float: none;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+}
+.header ul li ul p:hover {
+  background-color: lightblue;
+  height: 20px;
+}
+
+/*.header a:hover {
+  display: inline-block;
+  background-color: lightblue;
+  cursor: pointer;
+  height: 100%;
+  padding: 20px;
+}*/
+.header h1:hover {
+  background-color: lightblue;
+  cursor: pointer;
+  height: 100%;
+  padding-top: 10px;
+}
+.search-container {
+  float: right;
+}
+
+/*-----------------konten--------------------*/
+.konten {
+  width: 1000px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 65px;
+  box-sizing: border-box;
+
+}
+.h4 {
+  color: #1d439b; 
+}
+.news2 img {
+  float: left;
+  padding-right: 15px;
+  width: 120px;
+}
+.textt {;
+  font-size: 14px;
+}
+.news2 {
+  margin-right: 50px;
+}
+.news {
+  margin-top: 20px;
+}
+.side-right-bar {
+  float: right;
+  width: 300px;
+  margin: 10px 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.upcoming {
+  margin-top: 20px;
+}
+.side-left-bar {
+  float: left;
+  width: 600px;
+  margin: 10px 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.side-left-bar h6 {
+  font-size: 12px;
+}
+.jadwal {
+  padding: 15px;
+  margin-bottom: 10px;
+  margin: auto;
+  width: 300px;/*
+  border: 1px solid black;*/
+}
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+.btn-link {
+  float: right;
+}
+.th {
+  background-color: #4f74c8;
+  color: white;
+  text-align: center;
+}
+.hj {
+  width: 150px;
+}
+.konten {
+  width: 1000px;
+  background-color: white;
+  margin-top: 70px;
+}
+.h4 {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.rk {
+  line-height: 200px;
+  text-align: center;
+}
+.tabel {
+  background-color: #eaeaea;
+}
+.score {
+  line-height: 200px;
+  font-size: 20px;
+  text-align: center;
+}
+.accordion {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+transition: 0.4s;
+}
+.accordion:hover {
+background-color: #ccc;
+}
+.panel {
+padding: 0 18px;
+display: none;
+background-color: white;
+}
+.search1 {
+  padding: 15px;
+  margin-left: 60px;
+}
+input {
+  border: #c3c3c3 1px solid;
+  border-radius: 8px 0 0 8px;
+  border-right: #c3c3c3 0 solid;
+  color: #323232;
+  display: block;
+  font-size: 14px;
+  height: 55px;
+  text-indent: 10px;
+  width: 715px;
+  margin: auto;
+  float: left;
+}
+/*.fa-solid {
+
+    display: inline-block;
+    padding: 20px;
+    background-color: white;
+    font-size: 50px;
+
+}*/
+.search1 .inputButton {
+    background-color: #f6f6f6;
+    border: #c3c3c3 1px solid;
+    border-radius: 0 8px 8px 0;
+    color: #2e51a2;
+    cursor: pointer;
+    display: block;
+    font-family: 'Font Awesome 6 Pro',Avenir,lucida grande,tahoma,verdana,arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: 900;
+    height: 55px;
+    width: 50px;
+}
+.inputText {
+  font-size: 18px;
+}
